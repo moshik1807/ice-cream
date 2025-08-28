@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.iceCream{
+    background-color: rgb(226, 230, 233);
+    padding: 15px;
+    border-radius: 15px;
+}
+img{
+    border-radius: 50%;
+    width: 50%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
