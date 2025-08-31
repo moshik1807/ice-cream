@@ -1,6 +1,8 @@
 import { useState } from "react"
 import "../style.css"
-export default function IceCream(props:{name:string,imgUrl:string,stok:number,price:number,setcounter,setprice}){
+import type { Dispatch, SetStateAction } from "react";
+
+export default function IceCream(props:{name:string,imgUrl:string,stok:number,price:number,setcounter: Dispatch<SetStateAction<number>>,setprice: Dispatch<SetStateAction<number>>}){
     const[stok,setstok]=useState(props.stok)
     const[count,setcount]=useState(0)
     return(
@@ -36,4 +38,4 @@ export default function IceCream(props:{name:string,imgUrl:string,stok:number,pr
         </div>
         </>
     )
-}
+} 
